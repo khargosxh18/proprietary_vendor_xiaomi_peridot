@@ -21162,6 +21162,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libgui_shim",
+                "libaudiobase",
                 "libbinder",
                 "libmmosal",
                 "liblog",
@@ -21194,7 +21195,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     system_ext_specific: true,
-    allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -21914,6 +21914,7 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/anc.hal.so",
             ],
             shared_libs: [
+                "libion",
                 "libcutils",
                 "libutils",
                 "liblog",
@@ -40294,6 +40295,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/qseecom_sample_client",
             ],
             shared_libs: [
+                "libion",
                 "libcutils",
                 "libutils",
                 "liblog",
